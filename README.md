@@ -25,4 +25,7 @@ As mentioned in our paper, in order to train our model, you can download the Ori
 * scipy 1.10.1
 
 ## Running
-To get a quick start, you can download the pretrained unsupervised representation model from [[Pretrained Model]](https://pan.baidu.com/s/1hKf3CdJjHeh9KBeZv6OIrA?pwd=0dph) and put into folder `model`
+To get a quick start, you can download the pretrained unsupervised representation model from [[Pretrained Model]](https://pan.baidu.com/s/1hKf3CdJjHeh9KBeZv6OIrA?pwd=0dph) and put into folder `model`, then you should adjust the configuration in the `param.py` to meet your device requirements. After all the preparation work is completed, you can run the following command to start training.
+```
+python main.py
+```
