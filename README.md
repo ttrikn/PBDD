@@ -4,7 +4,6 @@ This is the open source code for paper: A Prompt-Based Learning Approach for Few
 - [Paper Abstract](##PaperAbstract)
 - [Preparation](##Preparation)
 - [Running](##Running)
-- [Training](##Training)
 - ## Paper Abstract
 
 - ## Preparation
@@ -29,3 +28,10 @@ To get a quick start, you can download the pretrained unsupervised representatio
 ```
 python main.py
 ```
+The prediction result will be saved in a .txt file in folder `output` , and the trained models ckpt will be saved in output/twitterdp+/[s1][d1][t1][ps111][nf_resnet50][lp11].
+
+[s1], [d1] and [t1] stand for "train_few1.tsv" (the few-shot training file), "dev_few1.tsv" (the few-shot development file) and template 1 respectively.
+
+[ps111] represents --prompt_shape is set to "111" here. This parameter shows the number of learnable tokens in each [LRN].We set --prompt_shape to "111" and each [LRN] will contain one learnable token when running. It only works and appears in the save path when we use learnable templates (template 1).
+
+[nf_resnet50] suggests that we use NF-ResNet50 as the visual encoder (default setting) and [lp11] means we set the local pooling scale to 1×1 here.Of course you can try other values to acquire better performance.
