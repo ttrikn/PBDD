@@ -24,7 +24,7 @@ As mentioned in our paper, in order to train our model, you can download the Ori
 * scipy 1.10.1
 
 ## Running
-To get a quick start, you can download the pretrained unsupervised representation model from [[Pretrained Model]](https://pan.baidu.com/s/1hKf3CdJjHeh9KBeZv6OIrA?pwd=0dph) and put into folder `model`, then you should adjust the configuration in the `param.py` to meet your device requirements. After all the preparation work is completed, you can run the following command to start training.
+To get a quick start, you can download the pretrained unsupervised representation model from [[rot Model]](https://pan.baidu.com/s/1hKf3CdJjHeh9KBeZv6OIrA?pwd=0dph) and put into folder `model`, then you should adjust the configuration in the `param.py` to meet your device requirements. After all the preparation work is completed, you can run the following command to start training.
 ```
 python main.py
 ```
@@ -35,3 +35,5 @@ The prediction result will be saved in a .txt file in folder `output` , and the 
 [ps111] represents --prompt_shape is set to "111" here. This parameter shows the number of learnable tokens in each [LRN].We set --prompt_shape to "111" and each [LRN] will contain one learnable token when running. It only works and appears in the save path when we use learnable templates (template 1).
 
 [nf_resnet50] suggests that we use NF-ResNet50 as the visual encoder (default setting) and [lp11] means we set the local pooling scale to 1×1 here.Of course you can try other values to acquire better performance.
+
+At the same time, we also provide an interface for testing a single sample. You can use the method `evaluate_on_demo` in `main.py` and find the pre-trained model from[[pre-trained model]](https://pan.baidu.com/s/1WRL3h5lvmadq_w_peiDvog?pwd=g83e). It should be noted that the data storage format needs to be consistent with the training stage.
