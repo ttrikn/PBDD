@@ -38,6 +38,16 @@ The prediction result will be saved in a .txt file in folder `output` , and the 
 
 [ps111] represents --prompt_shape is set to "111" here. This parameter shows the number of learnable tokens in each [LRN].We set --prompt_shape to "111" and each [LRN] will contain one learnable token when running. It only works and appears in the save path when we use learnable templates (template 1).
 
+
+
 [nf_resnet50] suggests that we use NF-ResNet50 as the visual encoder (default setting) and [lp11] means we set the local pooling scale to 1×1 here.Of course you can try other values to acquire better performance.
 
 At the same time, we also provide an interface for testing a single sample. You can use the method `evaluate_on_demo` in `main.py` and find the pre-trained model from[[pre-trained model]](https://pan.baidu.com/s/1WRL3h5lvmadq_w_peiDvog?pwd=g83e). It should be noted that the data storage format needs to be consistent with the training stage.
+
+## What's more
+
+<img src="https://github.com/ttrikn/PBDD/blob/main/script/frontend.png" width="1000"></img>
+
+We plan to implement an end-to-end system to simulate social media emotion recognition and depression detection in the near future. If you are interested in our work, please feel free to contact us:
+   - Heyang Feng : 1245020424@qq.com
+   - Xianxu Zhu : 1591694407@qq.com
