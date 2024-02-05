@@ -6,6 +6,8 @@ This is the open source code for paper: A Prompt-Based Learning Approach for Few
 - [Running](##Running)
 - ## Paper Abstract
 
+>The widespread use of social media has gradually unlocked the potential of utilizing its data for identifying depression. This paper introduces a Prompt-Based Depression Detection method (PBDD) for social media, aiming to effectively identify signs of depression in social media content. We designed a depression sentiment analysis model that leverages the concept of prompt learning.By deeply analyzing text and multimedia content on social media, the model effectively discerns depressive tendencies and related emotional characteristics. Considering the noisy nature of social media data and the complexity of multimodal features, the study incorporates a high-quality data sampling method to filter and optimize input data. This ensures the high quality of data during training and testing, significantly enhancing the model’s accuracy and reliability. Comprehensive experiments and analyses conducted on multiple authoritative datasets demonstrate that our method outperforms existing approaches in depression detection tasks, offering significant advantages.
+
 - ## Preparation
 ### Data preprocessing
 As mentioned in our paper, in order to train our model, you can download the Original Twitter dataset here: [[Twitter]](https://pan.baidu.com/s/1RI3l8fomIXHuR8e0_hUyhA?pwd=aea6). You can preprocess the dataset by the codes in the folder `datasets_pre_processing` following the steps in our paper, or you can get the proprecessed data from :[[Dataset]](https://pan.baidu.com/s/1eqYyXg6Y0PQkh-AHnpUD1g?pwd=b2lx) directly. You can also use other multimodal sentiment datasets by adjusting to the same structure as folder `datasets`.
