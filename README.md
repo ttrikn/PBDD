@@ -8,7 +8,7 @@ This is the open source code for paper: A Prompt-Based Learning Approach for Few
 
 >The widespread use of social media has gradually unlocked the potential of utilizing its data for identifying depression. This paper introduces a Prompt-Based Depression Detection method (PBDD) for social media, aiming to effectively identify signs of depression in social media content. We designed a depression sentiment analysis model that leverages the concept of prompt learning.By deeply analyzing text and multimedia content on social media, the model effectively discerns depressive tendencies and related emotional characteristics. Considering the noisy nature of social media data and the complexity of multimodal features, the study incorporates a high-quality data sampling method to filter and optimize input data. This ensures the high quality of data during training and testing, significantly enhancing the model’s accuracy and reliability. Comprehensive experiments and analyses conducted on multiple authoritative datasets demonstrate that our method outperforms existing approaches in depression detection tasks, offering significant advantages.
 
-<img src="https://github.com/ttrikn/PBDD/blob/main/script/arthitecture.png" width="600"></img>
+<img src="https://github.com/ttrikn/PBDD/blob/main/script/arthitecture.png" width="1000"></img>
 
 - ## Preparation
 ### Data preprocessing
