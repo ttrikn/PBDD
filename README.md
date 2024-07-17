@@ -44,6 +44,12 @@ The prediction result will be saved in a .txt file in folder `output` , and the 
 
 At the same time, we also provide an interface for testing a single sample. You can use the method `evaluate_on_demo` in `main.py` and find the pre-trained model from[[pre-trained model]](https://pan.baidu.com/s/1WRL3h5lvmadq_w_peiDvog?pwd=g83e). It should be noted that the data storage format needs to be consistent with the training stage.
 
+* Regarding the freezing or fine-tuning of the Pre-trained Language Model (PLM): In our study, to prevent the impact of massive data updates on model stability at the initial stage of training, the pre-trained language model was initially frozen. After this phase, we conducted moderate fine- tuning to better adapt the model to the specific task of depression detection.
+
+* Concerning the processing of outputs from the image encoder: To integrate image features into the BERT model, we processed images through a specialized encoder that transforms them into embeddings compatible with the BERT vocabulary. These adjusted embeddings are then used as input data for the model.
+
+* On the use of the [SEP] token: In our model, we added the [SEP] token between "image features and text features" and "sentence sentiment" to help the model distinguish between different types of inputs and enhance its semantic understanding capabilities. We have clearly marked the position of the [SEP] token in Figure 4 and have provided a detailed explanation of its role in the model within the text. The [SEP] token acts as a delimiter in prompt construction, placed between "image features" and "text features" and "sentence sentiment," and also at the end of each prompt to differentiate between various prompt templates.
+
 ## What's more
 
 <img src="https://github.com/ttrikn/PBDD/blob/main/script/frontend.png" width="1000"></img>
