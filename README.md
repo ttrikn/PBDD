@@ -16,6 +16,8 @@ As mentioned in our paper, in order to train our model, you can download the Ori
 
 ### Environment
 
+![](https://img.shields.io/badge/Python-FFD749?style=for-the-badge&logo=python&logoColor=white)
+
 * Python 3.8
 * PyTorch 1.8.1
 * torchaudio 0.8.1
